@@ -1,6 +1,12 @@
-#include<stdio.h>
-
-void main(void)
-{
-	printf("ITI intake 44");
-}
+#!$SHELL
+mkdir myDirectory
+cd myDirectory
+mkdir secondDirectory
+cd secondDirectory
+touch myNotePaper
+git add .
+cp  myNotePaper ../newNotePaper
+cd .. 
+mv newNotePaper myOldNotePaper
+git add .
+git commit -m “bash is created"
